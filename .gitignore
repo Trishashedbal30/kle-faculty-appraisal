@@ -1,0 +1,67 @@
+# Python environments and generated artifacts
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases, runtime state, uploads, and backups
+runtime/
+runtime-demo/
+runtime-demo/CREDENTIALS.txt
+backups/
+uploads/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-*
+
+# Supplied institutional inputs and derived manifests/data
+data/source/
+data/seed.json
+data/source_manifest.json
+PACKAGE_MANIFEST.json
+
+# Local copies with unresolved public redistribution terms
+web/assets/kle-logo.jpg
+web/assets/NimbusSans-Regular.otf
+web/assets/P052-Roman.otf
+
+# Generated appraisal reports (including real-person reports)
+reports/
+generated-reports/
+generated_reports/
+*.appraisal-report.pdf
+*.faculty-report.pdf
+*.report.pdf
+
+# Build and editor/OS temporary files
+build/
+dist/
+*.egg-info/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*.log
+.vscode/*.local.*

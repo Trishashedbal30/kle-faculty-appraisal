@@ -1,0 +1,1 @@
+{"version":"2.0.0","tasks":[{"label":"KLE: acceptance tests","type":"shell","command":"${command:python.interpreterPath}","args":["manage.py","test"],"group":"test","problemMatcher":[]}]}

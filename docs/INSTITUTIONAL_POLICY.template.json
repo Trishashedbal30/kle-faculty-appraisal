@@ -1,0 +1,24 @@
+{
+  "name": "ENTER APPROVED POLICY NAME",
+  "cycle": "2025-26",
+  "profile": "balanced",
+  "source_id": "UPLOAD_POLICY_AND_COPY_SOURCE_ID",
+  "reference": "ENTER INSTITUTIONAL APPROVAL REFERENCE",
+  "rules": [
+    {
+      "kind": "conference",
+      "category": "research",
+      "method": "count",
+      "weight": null,
+      "divisor": 1,
+      "cap": null,
+      "citation": "ENTER POLICY CLAUSE / PAGE"
+    }
+  ],
+  "bands": [
+    {
+      "minimum": 0,
+      "label": "ENTER APPROVED RATING LABEL"
+    }
+  ]
+}
