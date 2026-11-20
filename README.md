@@ -165,26 +165,7 @@ flowchart TD
 
 ### Evidence Verification and Human Approval
 
-```mermaid
-sequenceDiagram
-    actor Faculty
-    actor Reviewer
-    participant App
-    participant Graph as LangGraph
-    actor DeanIQAC as Dean / IQAC
-    actor HoD
-
-    Faculty->>App: Link claim and source; grant consent
-    Reviewer->>App: Inspect source, locator and claim
-    Reviewer->>App: Record named evidence decision
-    Faculty->>App: Declare completeness and lock plan
-    App->>Graph: Run with scoped, consented inputs
-    Graph-->>App: Draft, checks and citations (or blocked result)
-    DeanIQAC->>App: Quality review decision
-    HoD->>App: Endorse reviewed report
-    DeanIQAC->>App: Final release decision
-    App-->>Faculty: Make approved version available
-```
+Faculty link claims to sources and grant consent; reviewers inspect the source, locator, and claim before recording a named evidence decision. Once the faculty member declares completeness and locks the plan, LangGraph processes only scoped, consented inputs and returns a draft with checks and citations, or a blocked result. Dean/IQAC quality review, HoD endorsement, and final Dean/IQAC release remain separate human decisions before the approved version is made available.
 
 ## Approach
 
